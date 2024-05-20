@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CryptoJS from 'crypto-js';
+import BarraVertical from '../../common/BarraVertical/BarraVertical';
+import ChattingSection from '../../common/ChattingSection/ChattingSection';
+import MiddleSection from '../../common/MiddleSection/MiddleSection';
+import CommunitySection from '../../common/CommunitySection/CommunitySection';
+
+import './Home.css';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,9 +21,11 @@ const Home = () => {
   }, [navigate]);
 
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the home page!</p>
+    <div className='content-wrapper'>
+      <BarraVertical></BarraVertical>
+      <ChattingSection></ChattingSection>
+      <MiddleSection></MiddleSection>
+      <CommunitySection></CommunitySection>
     </div>
   );
 };
