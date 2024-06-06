@@ -1,12 +1,16 @@
 .chatting-section{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: start;
     background-color: #EFEFEF;
-    width: 21%;
+    width: 18%;
     height: 100vh;
-    
+    box-shadow: 2px 2px 8px 0 rgba(175, 175, 175, 0.5);
+    border-right: 1px solid #d3d3d3;
     padding-top: 1.26%;
-    padding-left: 1%;
+}
+
+.chatting-section h1 {
+    margin-bottom: 20%;
+    padding-left: 4.5%;
 }

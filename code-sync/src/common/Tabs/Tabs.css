@@ -41,6 +41,7 @@
 .tabs {
     display: flex;
     justify-content: center;
+    box-shadow: 2px 2px 8px 0 rgba(175, 175, 175, 0.5);
 }
 
 .tab {
@@ -48,6 +49,10 @@
     border: 1px solid #ccc;
     border-radius: 5px 5px 0 0;
     cursor: pointer;
+}
+
+.tab:hover{
+    background-color: #f0f0f0;
 }
 
 .tab.active {
@@ -75,15 +80,40 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 10;
+    cursor: move;
+    width: 12%; /* Aumentando um pouco a largura para acomodar a paleta de cores */
 }
 
 .menu button,
-.menu input[type="file"] {
+.menu input[type="file"],
+.menu input[type="color"] {
     display: block;
     margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.menu button:hover,
+.menu input[type="file"]:hover,
+.menu input[type="color"]:hover {
+    background-color: #0056b3;
+}
+
+.menu label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
 }

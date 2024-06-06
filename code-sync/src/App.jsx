@@ -4,6 +4,7 @@ import Login from './pages/Login/LoginPage';
 import Home from './pages/Home/Home';
 import Faq from './pages/Faq/Faq';
 import Config from './pages/Config/Config';
+import Register from './pages/Register/RegisterPage'; 
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/config" element={<Config />} />
         <Route path="*" element={<Navigate to="/login" />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
